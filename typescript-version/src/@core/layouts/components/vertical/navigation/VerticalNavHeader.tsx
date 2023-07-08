@@ -55,18 +55,18 @@ const VerticalNavHeader = (props: Props) => {
   const theme = useTheme()
 
   return (
-    <MenuHeaderWrapper className='nav-header' sx={{ pl: 6 }}>
+    <MenuHeaderWrapper className='MuiTypography-h6' sx={{ pl: 6 }}>
       {userVerticalNavMenuBranding ? (
         userVerticalNavMenuBranding(props)
       ) : (
         <Link href='/' passHref>
           <StyledLink>
-            <svg
+            {/* <svg
               width={30}
               height={25}
               version='1.1'
               viewBox='0 0 30 23'
-              xmlns='http://www.w3.org/2000/svg'
+              xmlns='http://www.w3.org/200/svg'
               xmlnsXlink='http://www.w3.org/1999/xlink'
             >
               <g stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
@@ -119,9 +119,9 @@ const VerticalNavHeader = (props: Props) => {
                   </g>
                 </g>
               </g>
-            </svg>
+            </svg> */}
             <HeaderTitle variant='h6' sx={{ ml: 3 }}>
-              {themeConfig.templateName}
+              {/* {themeConfig.templateName} */}
             </HeaderTitle>
           </StyledLink>
         </Link>
